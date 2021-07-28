@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>Case Study-1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="background-color: rgb(162, 238, 255);">
+        <center>
+            <div style="border: 5px solid black; border-radius: 10px; background-color: rgb(162, 255, 162);">
+        <h3 style="color: red; font-weight: bold; font-family: 'Courier New', Courier, monospace;" >CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET</h3>
+        <br>
+        <img height="100px" width="300px" src="Screenshot (25).png">
+        <h4 style="color: red; font-weight: bold; font-family: 'Courier New', Courier, monospace;">VS</h4>
+        <h3 style="margin-bottom: 10px; font-size: 25px; font-weight: bold; font-family: 'Courier New', Courier, monospace;" class="btn btn-info">Mobilenet</h3>
+    </div>
+    <ol>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="pair-pink-sport-shoes-on-260nw-228691018.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="960x0.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="rockerz-450-blue.png" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="silk-bubblyx2.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="spoon.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="packaged-water-bottle-500x500.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 173, 173); border-radius: 10px; margin-top: 10px; margin-bottom: 50px;" class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img height="500px" width="500px" src="ImgW.jpg" class="img-responsive">
+            </li>
+
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>GOOGLE LENS - </b>
+                <span></span>
+            </h5>
+            <h5 style="background-color: white; border-radius: 20px; margin-top: 10px; padding: 10px; border: 5px solid black;" class="col-sm-4 col-xs-12">
+                Output on <b>Mobilenet Model - </b>
+                <span></span>
+            </h5>
+
+            <div class="mini_result col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4></h4>
+            </div>
+        </div>
+    </ol>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="copy_right_footer" style="width:100%; float: left;">
+        Developed by - Anushka Sinha
+      </div>
+    </center>
+    </body>
+</html>
